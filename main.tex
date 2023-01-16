@@ -1,0 +1,101 @@
+\documentclass{article}
+%Кодировка и язык
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+%Формат документа
+\usepackage[a4paper, total={6.5in, 10in}]{geometry}
+
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{amssymb}
+
+%Добавляет коробочки, можно складывать туда текст)
+\usepackage{collectbox}
+
+%Картинки
+\usepackage{graphicx, epstopdf}
+\usepackage{float}
+
+%Графики
+\usepackage{pgfplots}
+    \usetikzlibrary{
+        angles,
+        quotes,
+    }
+%Подфигуры
+\usepackage{subfigure}
+
+%Сокращения, упрощения
+\usepackage{cancel}
+
+%Ссылки
+\usepackage[unicode, pdftex]{hyperref}
+
+%Улучшеные шрифты
+\usepackage{bm}
+\usepackage{titleps}
+
+%Cтруктуры
+\usepackage{array}
+
+
+
+
+
+%Сокращения
+\newcommand{\inner}[1]{\left( #1 \right)}
+\newcommand{\infig}[1]{\left{ #1 \right}}
+\newcommand{\insqr}[1]{\left[ #1 \right]}
+
+\newcommand{\com}{\mathbb{C}}
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\nat}{\mathbb{N}}
+
+\makeatletter
+\newcommand{\sqbox}{%
+    \collectbox{%
+        \@tempdima=\dimexpr\width-\totalheight\relax
+        \ifdim\@tempdima<\z@
+            \fbox{\hbox{\hspace{-.5\@tempdima}\BOXCONTENT\hspace{-.5\@tempdima}}}%
+        \else
+            \ht\collectedbox=\dimexpr\ht\collectedbox+.5\@tempdima\relax
+            \dp\collectedbox=\dimexpr\dp\collectedbox+.5\@tempdima\relax
+            \fbox{\BOXCONTENT}%
+        \fi
+    }%
+}
+\makeatother
+\newcommand{\mergelines}[2]{
+\begin{tabular}{llp{.5\textwidth}}
+#1 \\ #2
+\end{tabular}
+}
+\newcommand\tab[1][0.51cm]{\hspace*{#1}}
+\newcommand\difh[2]{\frac{\partial #1}{\partial #2}}
+
+
+
+\title{Билеты\\ По квантовой механике}
+\author{Автор:\\
+Matvei Karibdzhanov}
+\date{January 2023}
+
+\newpagestyle{main}{
+\setfootrule{0.4pt}
+\setfoot{}{\thepage}{Билет №\thesection}}
+\pagestyle{main}
+
+
+\begin{document}
+\pagestyle{main}
+
+\maketitle
+\tableofcontents
+\include{Ticket_1.tex}
+
+
+
+\end{document}
