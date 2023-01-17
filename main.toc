@@ -3,3 +3,9 @@
 \contentsline {subsection}{\numberline {1.1}соотношение неопределенности}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Волновая функция}{2}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Принцип суперпозиции}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Билет}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Операторы}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Определение}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Основное свойство}{3}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Транспонирование}{3}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Связь измеримых велечин и операторов}{3}{subsection.2.2}%

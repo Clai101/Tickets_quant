@@ -32,7 +32,7 @@
 \usepackage{cancel}
 
 %Ссылки
-\usepackage[unicode, pdftex]{hyperref}
+\usepackage{hyperref}
 
 %Улучшеные шрифты
 \usepackage{bm}
@@ -40,6 +40,9 @@
 
 %Cтруктуры
 \usepackage{array}
+
+%Решает проблемы с "Underfull \hbox"
+\usepackage{parskip}
 
 %Сокращения
 \newcommand{\inner}[1]{\left( #1 \right)}
@@ -92,7 +95,7 @@ Matvei Karibdzhanov}
 \tableofcontents
 
 \include{Ticket_1.tex}
-
+\include{Ticket_2.tex}
 
 
 \end{document}
