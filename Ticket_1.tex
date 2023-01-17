@@ -1,32 +1,44 @@
 \section{Билет}
 \subsection{соотношение неопределенности}
-Говрит о том, что неовзмжно точно померить и координату и импульс.
+Говрит o том, что неовзмжно точно померить и координату и импульс.
  Так как если велечины измеримы то $\exists$ такая есть общий базис 
  из собствнных функций. Тогда если велечинам соответствуют 
  операторы $\hat A,\ \hat B$ то:
-$$ \hat A \hat B \ket{n} = \hat B \hat A  \ket{n}$$
-А следовательно 
-$$\insqr{A, B} = \hat 0$$
+\begin{equation*} 
+ \hat A \hat B \ket{n} = \hat B \hat A  \ket{n} \ \implies\ 
+ \inner{\hat B \hat A - \hat A \hat B} \ket{n} = 
+ \insqr{\hat A, \hat B}\ket{n} = 0,
+\end{equation*}
+а следовательно 
+\begin{equation} 
+ \insqr{\hat A, \hat B} = \hat 0.
+\end{equation} 
 \\
-Точность задается следующим соотношением. 
-$$\Delta x \cdot \Delta p \geq \cfrac{\hslash}{2}$$
+Например, для импульса и координаты ссотношение неопредленности 
+выглядит следущим образом:
+\begin{equation} 
+ \Delta x \cdot \Delta p \geq \cfrac{\hslash}{2}.
+\end{equation} 
 
 \subsection{Волновая функция}
 Это удовлетворяет уравнению:
-$$
-p (x, t) = \abs{\psi (x, t)}^2
-$$
+\begin{equation} 
+ p (x, t) = \abs{\psi (x, t)}^2.
+\end{equation} 
 Для нее выполнятся условие нормировки 
-$$\braket{\psi (x)}{\psi (x)} = \int_{-\infty}^{\infty}
- \abs{\psi (x)}^2 dx = 1$$
-
-
+\begin{equation} 
+ \braket{\psi (x)}{\psi (x)} = \int_{-\infty}^{\infty} 
+  \abs{\psi (x)}^2 dx = 1.
+\end{equation} 
+   
 \subsection{Принцип суперпозиции}
 Пусть состояне частици описыватся волновой функций $\psi_1$
  и втоже время $\psi_2$ приэтом каждой функции соответственно удовлетворят
  состояния $A_1, \ A_2$ то также эта частица будет описыватся волновой 
  волновой функцией $\psi_3 = c_1 \psi_1 + c_2 \psi_2$ где $c_1, \ c_2 \in 
- \com$ с соответствующим состоянем $A_3$.
+ \com$ c соответствующим состоянем $A_3$ это сотояние при 
+ измерении может принять значения $A_3 = A_1 \lor A_3 = A_2$.
+ 
 
 
 

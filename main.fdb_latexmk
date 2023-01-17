@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1673836182 "c:/Users/Mat/Documents/Tickets_quant/main.tex" "main.pdf" "main" 1673836185 0
+["pdflatex"] 1673918719 "c:/Users/Mat/Documents/Tickets_quant/main.tex" "main.pdf" "main" 1673918723 0
   "C:/Apps/MiTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Apps/MiTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Apps/MiTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -246,13 +246,13 @@
   "C:/Users/Mat/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1673813720 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "C:/Users/Mat/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/larm1728.tfm" 1673810306 3252 3140686608bdcae603a09a7973fb9e55 ""
   "C:/Users/Mat/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1673810168 10773465 7bee8288b44b7b1297705fe11f8ab55a ""
-  "Ticket_1.aux" 1673836184 1288 f7ad027dc7fa9c38b41c376539545cad "pdflatex"
-  "Ticket_1.tex" 1673836182 1638 6e7c8b95ea4865bd8521bbbb6b686fb6 ""
-  "c:/Users/Mat/Documents/Tickets_quant/main.tex" 1673836063 2181 27430c41164f7458c2eaeda55bb4981a ""
-  "main.aux" 1673836184 676 f87b874eab67de45e48200dd570cee4b "pdflatex"
-  "main.out" 1673836184 766 b5b26d80851c718326951be0cc987278 "pdflatex"
-  "main.tex" 1673836063 2181 27430c41164f7458c2eaeda55bb4981a ""
-  "main.toc" 1673836184 419 704f53137be75ce14b72961e3b2d9d27 "pdflatex"
+  "Ticket_1.aux" 1673918723 1288 b1433d8bce4bad110236aabdfdf4b5f3 "pdflatex"
+  "Ticket_1.tex" 1673918719 2133 52013617abd1c176f3c80ee2056cceb1 ""
+  "c:/Users/Mat/Documents/Tickets_quant/main.tex" 1673918526 2175 f2913830c799a8254aa9be718b76bca6 ""
+  "main.aux" 1673918723 676 f87b874eab67de45e48200dd570cee4b "pdflatex"
+  "main.out" 1673918723 766 b5b26d80851c718326951be0cc987278 "pdflatex"
+  "main.tex" 1673918526 2175 f2913830c799a8254aa9be718b76bca6 ""
+  "main.toc" 1673918723 419 704f53137be75ce14b72961e3b2d9d27 "pdflatex"
   (generated)
   "Ticket_1.aux"
   "main.aux"
