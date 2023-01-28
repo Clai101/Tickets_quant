@@ -13,11 +13,30 @@
 \begin{equation} \label{eq:1}
  \insqr{\hat A, \hat B} = \hat 0.
 \end{equation} 
-\\
+Согласн принципу неопределенности
+\begin{equation} 
+ \Delta_{\psi} A \Delta_{\psi} B \  
+\end{equation} 
 Например, для импульса и координаты ссотношение неопредленности 
 выглядит следущим образом:
 \begin{equation} 
  \Delta x \cdot \Delta p \geq \cfrac{\hslash}{2}.
+\end{equation} 
+Для доказательства этого соотношения представим, что
+\begin{equation} 
+ \insqr{\hat f, \hat g} = - i \hslash \hat C,
+\end{equation}  
+Теперь давайте в ведем:
+\begin{equation} 
+  \sigma \hat f = \sqrt{\ave{\inner{\hat f - \ave{\hat f}}^2 }} = \sqrt{\ave{\inner{ \ave{\hat f_0}^2 }}},
+\end{equation} 
+\begin{equation} 
+ \ket{\phi } = \inner{\alpha \hat f + i \hat g }\ket{\psi}.
+\end{equation} 
+Так же не забываем требование эрмитовости операторов тогда:
+\begin{equation} 
+ \braket{\phi}{\phi} = \bra{\psi} \inner{\alpha^2 \hat f_0^2 + \hat g_0^2 + i\alpha \insqr{\hat f_0, \hat g_0}} \ket{\psi} = 
+ \alpha^2 \ave{\hat f_0^2} +  \ave{ \hat g_0^2} + \alpha \hslash \ave{\hat C}
 \end{equation} 
 
 \subsection{Волновая функция}

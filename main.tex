@@ -1,101 +1,125 @@
-\documentclass{article}
-%Кодировка и язык
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
+\documentclass[a4paper]{article}
 
-%Формат документа
-\usepackage[a4paper, total={6.5in, 10in}]{geometry}
+%Пакеты для математических символов:
+\usepackage{amsmath} % американское математическое сообщество.
+\usepackage{amssymb} % миллион разных значков и готический, ажурный шрифты.
+\usepackage{amscd} % диаграммы, графики.
+\usepackage{amsthm} % окружения теорем, определений и тд.
+%\usepackage{latexsym} % треугольники и пьяная стрелка.
 
-\usepackage{subfiles}
-\usepackage{amsmath}
-\usepackage{physics}
-\usepackage{amssymb}
-
-%Добавляет коробочки, можно складывать туда текст)
-\usepackage{collectbox}
-
-%Картинки
-\usepackage{graphicx, epstopdf}
-\usepackage{float}
-
-%Графики
-\usepackage{pgfplots}
-    \usetikzlibrary{
-        angles,
-        quotes,
-    }
-%Подфигуры
-\usepackage{subfigure}
-
-%Сокращения, упрощения
-\usepackage{cancel}
-
-%Ссылки
-\usepackage{hyperref}
-
-%Улучшеные шрифты
-\usepackage{bm}
-\usepackage{titleps}
-
-%Cтруктуры
-\usepackage{array}
-
-%Решает проблемы с "Underfull \hbox"
-\usepackage{parskip}
-
-%Сокращения
-\newcommand{\inner}[1]{\left( #1 \right)}
-\newcommand{\infig}[1]{\left{ #1 \right}}
-\newcommand{\insqr}[1]{\left[ #1 \right]}
-
-\newcommand{\com}{\mathbb{C}}
-\newcommand{\re}{\mathbb{R}}
-\newcommand{\nat}{\mathbb{N}}
-
-\makeatletter
-\newcommand{\sqbox}{%
-    \collectbox{%
-        \@tempdima=\dimexpr\width-\totalheight\relax
-        \ifdim\@tempdima<\z@
-            \fbox{\hbox{\hspace{-.5\@tempdima}\BOXCONTENT\hspace{-.5\@tempdima}}}%
-        \else
-            \ht\collectedbox=\dimexpr\ht\collectedbox+.5\@tempdima\relax
-            \dp\collectedbox=\dimexpr\dp\collectedbox+.5\@tempdima\relax
-            \fbox{\BOXCONTENT}%
-        \fi
-    }%
-}
-\makeatother
-\newcommand{\mergelines}[2]{
-\begin{tabular}{llp{.5\textwidth}}
-#1 \\ #2
-\end{tabular}
-}
-\newcommand\tab[1][0.51cm]{\hspace*{#1}}
-\newcommand\difh[2]{\frac{\partial #1}{\partial #2}}
+%пакеты для шрифтов:
+%\usepackage{euscript} % прописной шрифт с завитушками.
+%\usepackage{textcomp} % странные, но смешные значки(есть значок листика).
+%\usepackage{verbatim} % улучшенный шрифт "пишущей машинки".
+%\usepackage{array} % более удобные таблицы.
+%\usepackage{multirow} % мультистолбцы в таблицах.
+%\usepackage{longtable} % таблицы на несколько страниц.
 
 
 
-\title{Билеты\\ По квантовой механике}
-\author{Автор:\\
-Matvei Karibdzhanov}
-\date{January 2023}
+%Пакеты для оформления:
+%\usepackage[x11names]{xcolor} % 317 новых цветов для текста.
+%\usepackage[unicode, pdftex]{hyperref} % гиперссылки
+%\usepackage{multicol} % набор текста в несколько колонн.
+\usepackage{graphicx} % расширенные возможности вставки стандартных картинок.
+\usepackage{subcaption} % возможность вставлять картинки в строчку
+\usepackage{caption} % возможность подавить нумерацию у caption.
+\usepackage{wrapfig} % вставка картинок и таблиц, обтекаемых текстом.
+\usepackage{cancel} % значки для сокращения дробей, упрощения, стремления.
+\usepackage{misccorr} % в заголовках появляется точка, но при ссылке на них ее нет.
+%\usepackage{indentfirst} % отступ у первой строки раздела
+%\usepackage{showkeys} % показывает label формул над их номером.
+%\usepackage{fancyhdr} % удобное создание верхних и нижних колонтитулов.
+%\usepackage{titlesec} % еще одно создание верхних и нижних колонтитулов
 
-\newpagestyle{main}{
-\setfootrule{0.4pt}
-\setfoot{}{\thepage}{Билет №\thesection}}
-\pagestyle{main}
+%Пакеты шрифтов, кодировок. НЕ МЕНЯТЬ РАСПОЛОЖЕНИЕ.
+\usepackage[utf8]{inputenc} % кодировка символов.
+%\usepackage{mathtext} % позволяет использовать русские буквы в формулах. НЕСОВМЕСТИМО С tempora.
+\usepackage[T1, T2A]{fontenc} % кодировка шрифта.
+\usepackage[english, russian]{babel} % доступные языки.
+
+
+%tikz:
+\usepackage{tikz} % tikz
+\usetikzlibrary{decorations.text} % позволяет делать текст вдоль кривой.
+\usetikzlibrary{external} % позволяет кэшировать рисунки tikz.
+
+%Отступы и поля:
+%размеры страницы А4 11.7x8.3in
+\textwidth=7.3in % ширина текста
+\textheight=10in % высота текста
+\oddsidemargin=-0.5in % левый отступ(базовый 1дюйм + значение)
+\topmargin=-0.5in % отступ сверху до колонтитула(базовый 1дюйм + значение)
+
+%Всякая дичь:
+\relpenalty=10000 % бан на перенос на следующую строку внутри текста.
+\binoppenalty=10000 % бан на перенос на следующую строку внутри.
+\clubpenalty=10000 % бан на перенос первой строки абзаца на следующую страницу.
+\widowpenalty=10000 % бан на перенос последней строки абзаца на следующую страницу.
+%\emergencystretch=25pt % более качественные переносы слов. 
+\setcounter{MaxMatrixCols}{25} % максимальный размер матрицы 25х25.
+
+%Новые команды:
+\newcommand*{\parfrac}[3]{\ensuremath{\left( \frac{ \partial #1}{\partial #2} \right)_{#3}}} % частная производная со скобками. #1 - числитель, #2 - знаменатель, #3 - постоянный параметр.
+\newcommand*{\pfrac}[2]{\ensuremath{ \frac{\partial #1}{\partial #2}}} % частная производная.
+\newcommand*{\ppfrac}[2]{\ensuremath{ \frac{ \partial^2 #1}{\partial #2^2}}} % вторая частная производная.
+\newcommand*{\tx}[1]{\text{#1}} % сокращение для \text.
+\newcommand*{\supersection}[1]{\par\strut\par\hrule\par\begin{center}{\normalfont\large\bfseries \strut #1}\end{center}\par\hrule\par\strut\par} % текст с полоской сверху и снизу.
+\newcommand*{\termin}[1]{\par\noindent\normalfont\textbf{Определение: #1}} % определения.
+\newcommand*{\pagelink}[1]{\ensuremath{\left(\text{см. с.} \pageref{#1} \right)}} % ссылка на страницу.
+\newcommand{\bsum}{\sum\limits_{i=1}^n} % сумма от i=1 до n.
+\newcommand{\lsum}{\sum\limits} % сумма с пределами снизу и сверху.
+\newcommand{\lint}{\int\limits} % интеграл с пределами снизу и сверху.
+\newcommand{\loint}{\oint\limits} % интеграл по контуру с пределами снизу и сверху.
+\newcommand{\llim}{\lim\limits} % лимит с пределом снизу.
+\newcommand{\eds}{\ensuremath{\mathscr{E}}} % красивая ЭДС.
+\newcommand*{\task}[2]{\begin{LARGE}\textbf{Задача \ensuremath{#1}}\end{LARGE} \newline \textit{\large{#2}}} % Задача
+\newenvironment{given}{\noindent\begin{minipage}[t]{0.2\textwidth}\begin{Large}\textbf{Дано: \strut}\end{Large}\\\rule{1.10\textwidth}{0.5mm}\\}{\\\end{minipage}}
+\newenvironment{decision}{\begin{minipage}[t]{0.78\textwidth}\begin{Large} \textbf{Решение: \strut} \end{Large} \\ \rule{\textwidth}{0.5mm} \\}{\\\end{minipage}}                    
+\newcommand{\superdecision}[1]{\vrule width 1mm{\begin{decision} #1 \end{decision}} \newline\rule{\textwidth}{1mm}} 
+\newcommand{\supergiven}[1]{\begin{given} #1 \end{given}}                         
+\newcommand{\supertask}[2]{\supergiven{#1}\superdecision{#2}}
+\newcommand*{\question}[1]{\rule{1.02\textwidth}{0.5mm}\begin{equation*} #1 \end{equation*}}                  
+\newcommand*{\answer}[1]{\begin{large} \textbf{Ответ:} \end{large} \ensuremath{#1} }                   
+    
+
+%Определение математических операторов:
+\DeclareMathOperator{\arch}{arch} %гиперболический ареакосинус.
+\DeclareMathOperator{\arsh}{arsh} %гиперболический ареасинус.
+\DeclareMathOperator{\arth}{arth} %гиперболический ареатангенс.
+\DeclareMathOperator{\arcth}{arcth} %гиперболический ареакотангенс.
+\DeclareMathOperator{\diver}{div} %дивергенция.
+\DeclareMathOperator{\grad}{grad} %градиент.
+\DeclareMathOperator{\rot}{rot} %ротор.
+\newcommand{\laplas}{\mathop{\Delta}} %лапласиан.
+
+%Переопределение команд:
+\renewcommand{\labelenumi}{\theenumi)} % счетчик нумеруется в виде 1).
+\renewcommand{\theenumii}{\arabic{enumii}} % счетчик нумеруется цифрами.
+\renewcommand{\labelenumii}{\theenumii)} % уровень вложенности 2.
+\numberwithin{equation}{section} % формулы нумеруются в виде (2.5).
+%\renewcommand*{\vec}[1]{\overrightarrow{#1 \mathstrut}} % значок вектора.
+
+\newcommand{\messageforpeople}[1]{HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FacPhy HSE FPhy}
+
 
 
 \begin{document}
-\pagestyle{main}
 
-\maketitle
-\tableofcontents
+\pagestyle{empty}
+\oddsidemargin=-1.18in
+\topmargin=-1.5in
 
-\include{Ticket_1.tex}
-\include{Ticket_2.tex}
+\begin{titlepage}
+    \input{Title}
+\end{titlepage}
+
+\oddsidemargin=-0.5in
+\topmargin=-0.5in
+\pagestyle{plain}
+
+\newpage
+\tikzexternalize
 
 
 \end{document}
