@@ -1,5 +1,6 @@
 \section{Билет}
 \subsection{соотношение неопределенности}
+
 Говрит o том, что неовзмжно точно померить и координату и импульс.
  Так как если велечины измеримы то $\exists$ такая есть общий базис 
  из собствнных функций. Тогда если велечинам соответствуют 
@@ -11,40 +12,70 @@
 \end{equation*}
 а следовательно 
 \begin{equation} \label{eq:1}
- \insqr{\hat A, \hat B} = \hat 0.
+ \insqr{\hat A, \hat B} =\hat 0.
 \end{equation} 
-Согласн принципу неопределенности
+Согласно принципу неопределенности Гейзенберга:
 \begin{equation} 
- \Delta_{\psi} A \Delta_{\psi} B \  
+ \Delta_{\psi} \hat A \Delta_{\psi} \hat B \geq \cfrac{\hslash}{2}\insqr{\hat A, \hat B}
 \end{equation} 
+
+Сначала докажем соотношение:
+\begin{equation} 
+  \insqr{\hat f, \hat g} = \insqr{\hat f + \hat f_0, \hat g +\hat 
+  g_0}, \hat f_0, \hat g_0 = const.
+\end{equation} 
+
+\stp Так как $\hat f_0 = const$ и в силу линейности операторов, 
+следует $\hat f \hat f_0 = \hat f_0 \hat f$, таким образом просто
+раскрыв комутатор:
+\begin{equation*} 
+  \insqr{\hat f + \hat f_0, \hat g + \hat g_0} = 
+  \inrad{ \hat f + \cancel{\hat f_0}} \hat g 
+  + \cancel{\inrad{\hat f + \hat f_0} \hat g_0}
+  - \inrad{\hat g + \cancel{\hat g_0}}\hat f 
+  - \cancel{\inrad{\hat g + \hat g_0}\hat f_0} =
+  \hat f \hat g - \hat g \hat f.
+\end{equation*} 
+\enp
+
+\stp Для доказательства этого соотношения представим, что
+\begin{equation*} 
+ \insqr{\hat f, \hat g} = - i \hslash \hat C.
+\end{equation*}  
+Теперь давайте в ведем:
+\begin{equation*} 
+  \sigma \hat f = \sqrt{\ave{\inner{\hat f - \ave{\hat f}}^2 }} 
+  = \sqrt{\ave{\inner{ \ave{\hat f_0}^2 }}},
+\end{equation*} 
+\begin{equation*} 
+ \ket{\phi } = \inner{\alpha \hat f + i \hat g }\ket{\psi}.
+\end{equation*} 
+Так же не забываем требование эрмитовости операторов тогда:
+\begin{equation*} 
+ \braket{\phi}{\phi} = \bra{\psi} \inner{\alpha^2 \hat f_0^2 + 
+ \hat g_0^2 + i\alpha \insqr{\hat f_0, \hat g_0}} \ket{\psi} = 
+ \alpha^2 \ave{\hat f_0^2} +  \ave{ \hat g_0^2} + \alpha \hslash 
+ \ave{\hat C} \geq 0.
+\end{equation*} 
+Для существования решения уравнения надо потребовать условие на 
+дисрименант отностительно $ \alpha $
+\begin{equation*} 
+ \hslash^2 \ave{\hat C}^2 - 4 \Delta f^2 \Delta g^2 \leq 0 \implies  \Delta f \Delta g =  \cfrac{\hslash\ave{\hat C}}{2} 
+\end{equation*} 
+\enp
+
 Например, для импульса и координаты ссотношение неопредленности 
 выглядит следущим образом:
 \begin{equation} 
  \Delta x \cdot \Delta p \geq \cfrac{\hslash}{2}.
 \end{equation} 
-Для доказательства этого соотношения представим, что
-\begin{equation} 
- \insqr{\hat f, \hat g} = - i \hslash \hat C,
-\end{equation}  
-Теперь давайте в ведем:
-\begin{equation} 
-  \sigma \hat f = \sqrt{\ave{\inner{\hat f - \ave{\hat f}}^2 }} = \sqrt{\ave{\inner{ \ave{\hat f_0}^2 }}},
-\end{equation} 
-\begin{equation} 
- \ket{\phi } = \inner{\alpha \hat f + i \hat g }\ket{\psi}.
-\end{equation} 
-Так же не забываем требование эрмитовости операторов тогда:
-\begin{equation} 
- \braket{\phi}{\phi} = \bra{\psi} \inner{\alpha^2 \hat f_0^2 + \hat g_0^2 + i\alpha \insqr{\hat f_0, \hat g_0}} \ket{\psi} = 
- \alpha^2 \ave{\hat f_0^2} +  \ave{ \hat g_0^2} + \alpha \hslash \ave{\hat C}
-\end{equation} 
 
 \subsection{Волновая функция}
-Это удовлетворяет уравнению:
+\tab Волновая функция удовлетворяет уравнению:
 \begin{equation} 
- p (x, t) = \abs{\psi (x, t)}^2.
+ p (x, t) = \abs{\psi (x, t)}^2,
 \end{equation} 
-Для нее выполнятся условие нормировки 
+для нее выполнятся условие нормировки 
 \begin{equation} 
  \braket{\psi (x)}{\psi (x)} = \int_{-\infty}^{\infty} 
   \abs{\psi (x)}^2 dx = 1.
