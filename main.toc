@@ -9,3 +9,5 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Основное свойство}{3}{}%
 \contentsline {subsubsection}{\numberline {2.1.3}Транспонирование}{3}{}%
 \contentsline {subsection}{\numberline {2.2}Связь измеримых велечин и операторов}{3}{}%
+\contentsline {section}{\numberline {3}Билет}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Различные пространства и представления}{4}{}%

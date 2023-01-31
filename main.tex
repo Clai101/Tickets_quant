@@ -15,7 +15,7 @@
 %\usepackage{array} % более удобные таблицы.
 %\usepackage{multirow} % мультистолбцы в таблицах.
 %\usepackage{longtable} % таблицы на несколько страниц.
-
+%\usepackage{latexsym}
 
 
 %Пакеты для оформления:
@@ -67,6 +67,11 @@
 \renewcommand{\geq}{\geqslant}
 \renewcommand{\leq}{\leqslant}
 
+%%Значек выполнятся
+\newcommand{\per}{\hookrightarrow}
+
+
+
 %% Более привычные греческие буквы
 \renewcommand{\phi}{\varphi}
 \renewcommand{\epsilon}{\varepsilon}
@@ -74,7 +79,6 @@
 \newcommand{\com}{\mathbb{C}}
 \newcommand{\re}{\mathbb{R}}
 \newcommand{\nat}{\mathbb{N}}
-
 \newcommand{\stp}{$\filledmedtriangleleft$}
 \newcommand{\enp}{$\filledmedsquare$}
 
@@ -106,11 +110,12 @@
 
 \begin{document}
 
+%\pagestyle{empty}
+%\oddsidemargin=-1.18in
+%\topmargin=-1.5in
+%
 %\begin{titlepage}
-%    \pagestyle{empty}
-%    \oddsidemargin=-1.18in
-%    \topmargin=-1.5in
-%    \include{Title}
+%\input{Title}
 %\end{titlepage}
 
 \oddsidemargin=-0.5in
@@ -127,6 +132,6 @@
 
 \include{Ticket_1.tex}
 \include{Ticket_2.tex}
-
+\include{Ticket_3.tex}
 
 \end{document}

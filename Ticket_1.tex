@@ -6,17 +6,18 @@
  из собствнных функций. Тогда если велечинам соответствуют 
  операторы $\hat A,\ \hat B$ то:
 \begin{equation*} 
- \hat A \hat B \ket{n} = \hat B \hat A  \ket{n} \ \implies\ 
+ \hat A \hat B \ket{n} = \hat B \hat A  \ket{n} \implies 
  \inner{\hat B \hat A - \hat A \hat B} \ket{n} = 
  \insqr{\hat A, \hat B}\ket{n} = 0,
 \end{equation*}
 а следовательно 
-\begin{equation} \label{eq:1}
+\begin{equation} \label{eq:1.2}
  \insqr{\hat A, \hat B} =\hat 0.
 \end{equation} 
 Согласно принципу неопределенности Гейзенберга:
 \begin{equation} 
- \Delta_{\psi} \hat A \Delta_{\psi} \hat B \geq \cfrac{\hslash}{2}\insqr{\hat A, \hat B}
+ \Delta_{\psi} \hat A \Delta_{\psi} \hat B \geq \cfrac{\hslash}{2}
+ \insqr{\hat A, \hat B}
 \end{equation} 
 
 Сначала докажем соотношение:
@@ -60,7 +61,8 @@
 Для существования решения уравнения надо потребовать условие на 
 дисрименант отностительно $ \alpha $
 \begin{equation*} 
- \hslash^2 \ave{\hat C}^2 - 4 \Delta f^2 \Delta g^2 \leq 0 \implies  \Delta f \Delta g =  \cfrac{\hslash\ave{\hat C}}{2} 
+ \hslash^2 \ave{\hat C}^2 - 4 \Delta f^2 \Delta g^2 \leq 0 \implies\, 
+ \Delta f \Delta g \geq \cfrac{\hslash\ave{\hat C}}{2} 
 \end{equation*} 
 \enp
 
@@ -71,12 +73,13 @@
 \end{equation} 
 
 \subsection{Волновая функция}
-\tab Волновая функция удовлетворяет уравнению:
+Волновая функция удовлетворяет уравнению:
 \begin{equation} 
  p (x, t) = \abs{\psi (x, t)}^2,
 \end{equation} 
-для нее выполнятся условие нормировки 
+для нее также выполнятся условие нормировки 
 \begin{equation} 
+  \label{eq:1.6}
  \braket{\psi (x)}{\psi (x)} = \int_{-\infty}^{\infty} 
   \abs{\psi (x)}^2 dx = 1.
 \end{equation} 

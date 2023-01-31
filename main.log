@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.15)  28 JAN 2023 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.15)  31 JAN 2023 17:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -746,25 +746,25 @@ Package pdftexcmds Info: \pdfdraftmode found.
 ) (C:\Apps\MiTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
-) (C:\Apps\MiTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzexternalshared.code.tex)) (main.aux (Ticket_1.aux) (Ticket_2.aux))
+) (C:\Apps\MiTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzexternalshared.code.tex)) (main.aux (Ticket_1.aux) (Ticket_2.aux) (Ticket_3.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
  (C:\Apps\MiTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
@@ -787,7 +787,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \th on input line 107.
+LaTeX Info: Redefining \th on input line 111.
 \openout3 = `main.auxlock'.
 
  (main.toc
@@ -823,23 +823,26 @@ Package titlesec Warning: You are using an old interface for page styles
 
 
 
-] (main.aux (Ticket_1.aux) (Ticket_2.aux))
+]
+\openout2 = `Ticket_3.aux'.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ (Ticket_3.tex) [4
 
- ) 
+
+
+] (main.aux (Ticket_1.aux) (Ticket_2.aux) (Ticket_3.aux)) ) 
 Here is how much of TeX's memory you used:
- 21660 strings out of 475385
- 413685 string characters out of 2791452
- 708690 words of memory out of 3000000
- 42641 multiletter control sequences out of 15000+600000
+ 21690 strings out of 475385
+ 414536 string characters out of 2791452
+ 709047 words of memory out of 3000000
+ 42664 multiletter control sequences out of 15000+600000
  482701 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,89p,641b,265s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk>{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolE.enc} <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk><C:/Apps/MiTeX/fonts/type1/public/mnsymbol/MnSymbol10.pfb><C:/Apps/MiTeX/fonts/type1/public/mnsymbol/MnSymbol7.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (3 pages, 158568 bytes).
+{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolD.enc} <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk>{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{C:/Apps/MiTeX/fonts/enc/dvips/mnsymbol/MnSymbolE.enc} <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\Mat\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk><C:/Apps/MiTeX/fonts/type1/public/mnsymbol/MnSymbol10.pfb><C:/Apps/MiTeX/fonts/type1/public/mnsymbol/MnSymbol7.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Apps/MiTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (4 pages, 171912 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
+ 237 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
